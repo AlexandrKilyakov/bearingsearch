@@ -1,0 +1,233 @@
+@@include('./template/header.html', { "title": "Главная" })
+
+<div class="section--std container">
+  <form action="/" class="form--search-line form--content">
+    <input type="search" placeholder="Подшипник скольжения сферический ШС12" />
+    <button>@@include("./assets/svg/icon/search.html")</button>
+  </form>
+
+  <h1 class="title h3">
+    <span class="mark">По запросу</span> «Шариковый радиальный однорядный
+    подшипник 1180304 АК2С23 1 ГПЗ» найдено: 10 аналогов
+  </h1>
+
+  <section class="section--filter accordion active">
+    <header class="accordion--name">
+      <p class="name">Подробный поиск</p>
+      <button class="arrow"></button>
+    </header>
+    <div class="accordion--child">
+      <div class="contant section--filter-contant" filter-contant>
+        <form class="item-enter">
+          <fieldset class="enter" data-add-enter>
+            <!-- Если поле уже заполнено и используется, тогда поставь класс "completed" -->
+            <label class="completed" data-name="Inner-diameter"
+              >Внутренний диаметр (мм.)
+              <div class="range">
+                <input
+                  type="number"
+                  name="num"
+                  min="1"
+                  max="175"
+                  step="0.1"
+                  placeholder="1"
+                />
+                <input
+                  type="number"
+                  name="num"
+                  min="1"
+                  max="175"
+                  step="0.1"
+                  placeholder="175"
+                />
+              </div>
+            </label>
+            <label data-name="external-diameter"
+              >Внешний диаметр (мм.)
+              <div class="range">
+                <input
+                  type="number"
+                  name="num"
+                  min="1"
+                  max="175"
+                  step="0.1"
+                  placeholder="1"
+                />
+                <input
+                  type="number"
+                  name="num"
+                  min="1"
+                  max="175"
+                  step="0.1"
+                  placeholder="175"
+                />
+              </div>
+            </label>
+            <label data-name="width"
+              >Ширина (мм.)
+              <div class="range">
+                <input
+                  type="number"
+                  name="num"
+                  min="1"
+                  max="175"
+                  step="0.1"
+                  placeholder="1"
+                />
+                <input
+                  type="number"
+                  name="num"
+                  min="1"
+                  max="175"
+                  step="0.1"
+                  placeholder="175"
+                />
+              </div>
+            </label>
+          </fieldset>
+          <fieldset class="selections">
+            <select name="select">
+              <option value="Категория" selected>Категория</option>
+              <option value="А – 5, 4, 2, Т">А – 5, 4, 2, Т</option>
+              <option value="В – 0, 6Х, 6, 5">В – 0, 6Х, 6, 5</option>
+              <option value="С – 8, 7, 0, 6">С – 8, 7, 0, 6</option>
+            </select>
+            <select name="select">
+              <option value="Страна" selected>Страна</option>
+              <option value="Россия">Россия</option>
+              <option value="Китай">Китай</option>
+              <option value="Япония">Япония</option>
+              <option value="Германия">Германия</option>
+              <option value="Великобритания">Великобритания</option>
+              <option value="Индия">Индия</option>
+              <option value="Франция">Франция</option>
+              <option value="Италия">Италия</option>
+              <option value="Канада">Канада</option>
+              <option value="Южная Корея">Южная Корея</option>
+            </select>
+            <select name="select">
+              <option value="Производитель" selected>Производитель</option>
+              <option value="Архангельский подшипниковый завод">
+                Архангельский подшипниковый завод
+              </option>
+              <option value="Самарский подшипниковый завод">
+                Самарский подшипниковый завод
+              </option>
+              <option value="Пермский турбогенераторный завод">
+                Пермский турбогенераторный завод
+              </option>
+              <option value="Волжский подшипниковый завод">
+                Волжский подшипниковый завод
+              </option>
+              <option value="Липецкий спецподшипниковый завод">
+                Липецкий спецподшипниковый завод
+              </option>
+              <option value="Подшипниковый завод имени С.П. Королева">
+                Подшипниковый завод имени С.П. Королева
+              </option>
+              <option value="Нижегородский прецизионный подшипниковый завод">
+                Нижегородский прецизионный подшипниковый завод
+              </option>
+              <option value="Екатеринбургский подшипниковый завод">
+                Екатеринбургский подшипниковый завод
+              </option>
+              <option value="Московский подшипниковый завод">
+                Московский подшипниковый завод
+              </option>
+              <option value="Тульский подшипниковый завод">
+                Тульский подшипниковый завод
+              </option>
+            </select>
+          </fieldset>
+          <fieldset class="accordion add-filter">
+            <p class="accordion--name">Ещё фильтры</p>
+            <div class="accordion--child">
+              <div class="contant" data-add-filter>
+                <button
+                  type="button"
+                  class="element"
+                  data-min="1"
+                  data-max="100"
+                  data-step="0.1"
+                  data-name="outer-race-width"
+                >
+                  Ширина наружной обоймы (C) (мм.):
+                </button>
+                <button type="button" class="element">
+                  Грузоподъемность статическая (C0) (дж.):
+                </button>
+                <button type="button" class="element">
+                  Грузоподъемность динамическая (C) (дж.):
+                </button>
+                <button type="button" class="element">
+                  Частота вращения предельная при пластичной смазке (дж.):
+                </button>
+                <button type="button" class="element">
+                  Ширина наружной обоймы (C) (мм.):
+                </button>
+                <button type="button" class="element">
+                  Грузоподъемность динамическая (C) (дж.):
+                </button>
+                <button type="button" class="element">
+                  Грузоподъемность статическая (C0) (дж.):
+                </button>
+                <button type="button" class="element">
+                  Частота вращения предельная при пластичной смазке (дж.):
+                </button>
+              </div>
+            </div>
+          </fieldset>
+          <button type="button" class="submit">Применить фильтры</button>
+        </form>
+        <!-- Тут скрипты готовы -->
+        <section class="item-choice">
+          <div class="element" data-name-filter="Inner-diameter">
+            <p class="value" data-title="Внутренний диаметр:">1 — 12 мм</p>
+            <button class="btn--close"></button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="section--std container">
+  <h2 class="title h3">Результаты поиска:</h2>
+
+  <div class="table--scroll">
+    <table class="table">
+      <tr>
+        <th>Название</th>
+        <th>Внутренний диаметр&nbsp;(мм.)</th>
+        <th>Внешний диаметр&nbsp;(мм.)</th>
+        <th>Ширина&nbsp;(мм.)</th>
+        <th>Категория</th>
+        <th>Страна</th>
+        <th class="pr-0">Производитель</th>
+        <th class="bb-none"></th>
+      </tr>
+      <tr>
+        <td>Шариковый радиальный однорядный подшипник 1180304 АК2С23 1 ГПЗ</td>
+        <td>20</td>
+        <td>52</td>
+        <td>18</td>
+        <td>Шариковые</td>
+        <td>Россия</td>
+        <td class="pr-0">ПромСнабПодшип</td>
+        <td class="bb-none"><button>Где купить</button></td>
+      </tr>
+      <tr>
+        <td>Шариковый радиальный однорядный подшипник 1180304 АК2С23 1 ГПЗ</td>
+        <td>20</td>
+        <td>52</td>
+        <td>18</td>
+        <td>Шариковые</td>
+        <td>Россия</td>
+        <td class="pr-0">ПромСнабПодшип</td>
+        <td class="bb-none"><button>Где купить</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+@@include('./template/footer.html')
